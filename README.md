@@ -88,3 +88,81 @@ Command format : node app.js checkSeat <nomor_theater>
 
 <img width="239" alt="Screen Shot 2022-07-29 at 16 49 33" src="https://user-images.githubusercontent.com/22075597/181733514-8c231a6d-bf10-4332-bf67-69a83e21b0a7.png">
 
+# Movie Theater Part 2
+## Learning Competencies
+- Mampu membuat solusi dari requirement yang diberikan
+- Mampu memodelkan sistem dengan menggunakan konsep OOP
+- Memahami hubungan antar class (Inheritance, Composition dan Aggregation)
+- Mampu menggunakan method chaining
+- Mampu menggunakan callback untuk menampilkan data
+
+## Summary
+Melanjutkan challenge Movie Theater sebelumnya, mari kita tambahkan kompleksitas dari program kita. Pastikan kamu sudah menggunakan `fs.readFile` dan `fs.writeFile` sejak part 1.
+
+## Release 0 - buyTicket
+Buatlah sebuah perintah untuk proses pembelian ticket.
+Notes: 
+- id milik customer haruslah auto-increment
+- Seat number terbatas dari A-1 sampai F-8 (column A-F, row 1-8)
+
+Command : node app.js buyTicket <id_theater> <nama_penonton> <gender_penonton> <seat_number> <ticket_type>
+
+1. Contoh output jika proses pembelian tiket berhasil :
+<img width="332" alt="Screen Shot 2022-08-01 at 19 33 09" src="https://user-images.githubusercontent.com/22075597/182148584-db4ae283-ee51-4761-a15e-0f7ed65a969a.png">
+
+2. Contoh output jika proses pembelian tiket gagal, karena id theater tidak ditemukan:
+<img width="342" alt="Screen Shot 2022-08-01 at 19 33 14" src="https://user-images.githubusercontent.com/22075597/182148617-130bbb3d-1c42-4a92-8a63-0a0fbcb178c2.png">
+
+3. Contoh output jika proses pembelian tiket gagal, karena kursi sudah ditempati :
+<img width="379" alt="Screen Shot 2022-08-01 at 19 34 03" src="https://user-images.githubusercontent.com/22075597/182148692-bf431d75-0168-4c1c-ab92-6656f9c92faf.png">
+
+## Release 1 - ticketInfo
+Buatlah sebuah perintah untuk proses menampilkan info dari tiket.
+Command : node app.js ticketInfo <id_penonton>
+
+1. Contoh output jika proses menampilkan info tiket berhasil :
+<img width="495" alt="Screen Shot 2022-08-01 at 19 34 30" src="https://user-images.githubusercontent.com/22075597/182148839-2164d890-4ac1-4993-8652-d3c86e911b9e.png">
+
+2. Contoh output jika proses menampilkan info tiket gagal, karena id pelanggan tidak ada :
+<img width="314" alt="Screen Shot 2022-08-01 at 19 34 36" src="https://user-images.githubusercontent.com/22075597/182148873-0ec99779-235d-4a4c-8ca9-aadcbe6c777f.png">
+
+## Release 2 - changeTicket
+Buatlah sebuah perintah untuk melakukan proses penukaran ticket.
+Command : node app.js changeTicket <id_penonton> <id_theater> <seat_number>
+
+1. Contoh output jika proses penukaran tiket berhasil :
+<img width="355" alt="Screen Shot 2022-08-01 at 19 35 53" src="https://user-images.githubusercontent.com/22075597/182149126-b0f9bbea-603f-42cf-92b4-7812f62729b6.png">
+
+2. Contoh output jika proses penukaran tiket gagal, karena id pelanggan tidak ada :
+<img width="314" alt="Screen Shot 2022-08-01 at 19 35 57" src="https://user-images.githubusercontent.com/22075597/182149147-8405f97c-9e6c-400e-8340-f603de279965.png">
+
+
+3. Contoh output jika proses penukaran tiket gagal, karena id theater tidak ditemukan :
+<img width="302" alt="Screen Shot 2022-08-01 at 19 36 02" src="https://user-images.githubusercontent.com/22075597/182149165-48c7eb78-fa4c-4d39-bd2e-613a231458df.png">
+
+
+4. Contoh output jika proses penukaran tiket gagal, karena kursi di bioskop sudah ditempati :
+<img width="370" alt="Screen Shot 2022-08-01 at 19 36 06" src="https://user-images.githubusercontent.com/22075597/182149186-edf6f58c-d1bf-402b-9bbc-1ab032780479.png">
+
+## Release 3 - cancelTicket
+Buatlah sebuah perintah untuk menghapus pelanggan.
+Command : node app.js cancelTicket <id_penonton>
+
+1. Contoh output jika proses penghapusan pelanggan berhasil :
+<img width="252" alt="Screen Shot 2022-08-01 at 19 37 17" src="https://user-images.githubusercontent.com/22075597/182149294-4ed92fd9-5516-430c-aa26-9390cbc62d5f.png">
+
+
+2. Contoh output jika proses penghapusan pelanggan gagal, karena id pelanggan tidak ditemukan:
+<img width="321" alt="Screen Shot 2022-08-01 at 19 37 22" src="https://user-images.githubusercontent.com/22075597/182149325-a55a1729-01e0-4a3b-bdf8-de4d8ec2a1a5.png">
+
+## Release 4 - showCustomer
+Sebagai pihak dari perusahaan kita perlu tau data pelanggan kita. Buatlah sebuah perintah untuk menampilkan data tempat duduk beserta nama pelanggan yang menempatinya. 
+
+Setiap pelanggan akan mendapatkan panggilan `Mr.` jika gender nya `Male` dan `Mrs.` jika gender nya `Female`. Untuk menampilkan nama dengan format tersebut, buatlah sebuah instance method.
+
+Command format : node app.js showCustomer <id_theater>
+1. Contoh output jika proses menampilkan data berhasil :
+<img width="467" alt="Screen Shot 2022-08-01 at 19 38 09" src="https://user-images.githubusercontent.com/22075597/182149496-227a357d-d03a-4e9b-a279-d6c6dbef7ee9.png">
+
+2. Contoh output jika proses menampilkan data berhasil gagal, karena id theater tidak ditemukan 
+<img width="316" alt="Screen Shot 2022-08-01 at 19 38 27" src="https://user-images.githubusercontent.com/22075597/182149562-f80acab7-01f7-44e5-ae0f-b06e7c1d6e33.png">
