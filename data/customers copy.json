@@ -1,0 +1,46 @@
+[
+  {
+      "id": 1,
+      "name": "Christy",
+      "gender": "Female",
+      "ticket": {
+          "theaterName": "Cinema 12",
+          "type": "Regular",
+          "movie": "Codezilla",
+          "seatNumber": "A-5"
+      }
+  },
+  {
+      "id": 2,
+      "name": "Patra",
+      "gender": "Male",
+      "ticket": {
+          "theaterName": "Moviemaxx",
+          "type": "Premiere",
+          "movie": "Avatar The Legend of Callback",
+          "seatNumber": "A-4"
+      }
+  },
+  {
+      "id": 3,
+      "name": "Rena",
+      "gender": "Female",
+      "ticket": {
+          "theaterName": "Cinema 12",
+          "type": "Premiere",
+          "movie": "Codezilla",
+          "seatNumber": "D-8"
+      }
+  },
+  {
+      "id": 4,
+      "name": "Ardi",
+      "gender": "Male",
+      "ticket": {
+          "theaterName": "Cinema 12",
+          "type": "IMAX",
+          "movie": "Codezilla",
+          "seatNumber": "A-2"
+      }
+  }
+]

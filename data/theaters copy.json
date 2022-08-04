@@ -1,0 +1,27 @@
+[
+  {
+      "id": 1,
+      "name": "Cinema 12",
+      "movie": "Codezilla"
+  },
+  {
+      "id": 2,
+      "name": "Bioskop IXX",
+      "movie": "The Journey to Center of OOP"
+  },
+  {
+      "id": 3,
+      "name": "Moviemaxx",
+      "movie": "Avatar The Legend of Callback"
+  },
+  {
+      "id": 4,
+      "name": "VGCinema",
+      "movie": "Git The Kungfu Master"
+  },
+  {
+      "id": 5,
+      "name": "Bioskop IXX",
+      "movie": "Json The Protector"
+  }
+]
