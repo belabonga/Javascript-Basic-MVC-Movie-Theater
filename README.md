@@ -1,4 +1,4 @@
-# hcktv-P1-W1D5-MovieTheater-Graded
+# Javascript Basic MVC - Movie Theater
 
 # Movie Theater
 ## Learning Competencies
